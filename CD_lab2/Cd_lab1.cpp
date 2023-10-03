@@ -46,9 +46,14 @@ int main()
             {
                 if(!isdigit(statement[inputer+1]))
                 {
-
+                    if(isdigit(statement[inputer]) && statement[inputer-1]== '+' || statement[inputer-1]== '-' || statement[inputer-1]=='='|| statement[inputer-1]=='*'|| statement[inputer-1]=='/'|| statement[inputer-1]== '%')
+                        {
+                            cout<<"<"<<statement[inputer]<<">";
+                        }
+                    else{
 
                 cout<<"<"<<statement[inputer-1]<<statement[inputer]<<">";
+                }
                 }
             }
 
